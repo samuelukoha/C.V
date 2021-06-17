@@ -1,14 +1,14 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-const Home = () => {
+const About = () => {
     return (
         <>
             <Navbar />
-            <h1>Welcome to the Home page</h1>
+            <h1>Welcome to the About page</h1>
             <Footer />
         </>
     );
 }
 
-export default Home;
+export default About;
