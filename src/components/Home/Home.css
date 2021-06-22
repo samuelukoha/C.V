@@ -249,3 +249,28 @@ nav ul li a {
     color: #000099;
 }
 
+/* IMAGE SLIDER 2117784163*/
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 70%;
+}
+
+.slider .image {
+    height: 568px;
+    width: 845px;
+    border-radius: 5px;
+}
+
+.slider i {
+    position: absolute;
+    top: 90%;
+    color: #fff;
+    font-size: 35px;
+    left: 100px;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}

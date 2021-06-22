@@ -1,4 +1,6 @@
 import "./Home.css";
+import { SliderData } from './SliderData';
+import { useState } from "react";
 
 // IMAGES
 import frame1 from "./Images/01.svg";
@@ -10,10 +12,23 @@ import frame4 from "./Images/04.svg";
 import { FaRegComments, FaWallet } from 'react-icons/fa';
 import { BiVideo } from 'react-icons/bi';  
 import { ImQuotesLeft } from 'react-icons/im';
+import { IoIosArrowDropright } from 'react-icons/io';
 // import Navbar from '../Navbar/Navbar';
 // import Footer from '../Footer/Footer';
 
-const Home = () => {
+const Home = ({ slides }) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  console.log(current)
+  // if (!Array.isArray(slides) || slides.length <= 0) {
+  //   return null;
+  // }
+
   return (
     <div className="home">
       <header>
@@ -155,10 +170,15 @@ const Home = () => {
         <div className="heading">
           <h2>What Our Users Are Saying</h2>
         </div>
-        
         <div className="icon-box">
-          <i><ImQuotesLeft /></i>
+          <i><ImQuotesLeft /></i> 
         </div>
+        <section className="slider">
+          <i><IoIosArrowDropright onClick={nextSlide}/> </i>
+          { SliderData.map((slide, index) => {
+            return <img src={slide.image} alt="items for sale" className="image"/>;
+          })}
+        </section>
       </div>
     </div>
   );
