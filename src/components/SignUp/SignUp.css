@@ -1,0 +1,42 @@
+
+  .center-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.signUp{
+  font-size: 15px;
+    height: 80vh;
+    border-radius: 8px;
+    padding: 30px 35px;
+    box-shadow: 7.90519905090332px 15.81039810180664px 56.91743087768555px 0px rgb(44 43 125 / 10%);
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+form .form-control{
+  border:2px solid #e4e2e2;
+  background-color: white ;
+  border-radius: 3.16208px;
+
+}
+.form-label, p{
+  color: rgba(102, 102, 102, 1)  ;
+} 
+.logos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon{
+  margin: 20px;
+}
