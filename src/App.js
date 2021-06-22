@@ -1,3 +1,4 @@
+// import './App.css';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import { SliderData } from './components/Home/SliderData';
@@ -9,7 +10,8 @@ function App() {
       <Router>
         <>
           <Switch>
-            <Route path="/" exact component={Home} slides={SliderData}/>
+            <Home slides={SliderData}/>
+            <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
           </Switch>
         </>

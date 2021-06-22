@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
 header {
     background-image: url(./Images/main-bg.svg);
@@ -211,7 +212,8 @@ nav ul li a {
 }
 
 .testimonials-container .heading h2 {
-    font-weight: lighter;
+    margin-top: 200px;
+    /* font-weight: lighter; */
     font-size: 64px;
 }
 .testimonials-container .top-box {
@@ -219,7 +221,9 @@ nav ul li a {
     height: 274px;
     background: #6698FA;
     opacity: 0.6;
-    margin-left: 27%;
+    margin-left: 400px;
+    /* display: inline-block; */
+
 }
 
 .testimonials-container .left-box {
@@ -228,12 +232,13 @@ nav ul li a {
     background: #6698FA;
     opacity: 0.6;
     margin-top: 100px;
+    display: inline-flex;
+    margin-right: 50%;
 }
 
 .testimonials-container .icon-box {
-    /* position: relative; */
-    margin-top: -23%;
-    margin-left: 110px;
+    margin-top: -100px;
+    margin-left: 130px;
     width: 150px;
     height: 150px;
     background: #B1D4E5;
@@ -241,7 +246,6 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid red; */
 }
 
 .testimonials-container .icon-box i {
@@ -252,25 +256,33 @@ nav ul li a {
 /* IMAGE SLIDER 2117784163*/
 .slider {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 70%;
+    display: inline-flex;
 }
 
 .slider .image {
-    height: 568px;
-    width: 845px;
-    border-radius: 5px;
+    height: 600px;
+    width: 645px;
+    border-radius: 10px;
 }
 
 .slider i {
     position: absolute;
     top: 90%;
-    color: #fff;
+    left: 90%;
+    color: red;
     font-size: 35px;
-    left: 100px;
     cursor: pointer;
     z-index: 10;
     user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 2s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 2s;
+    transform: scale(1.08);
 }

@@ -25,9 +25,9 @@ const Home = ({ slides }) => {
   };
 
   console.log(current)
-  // if (!Array.isArray(slides) || slides.length <= 0) {
-  //   return null;
-  // }
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
 
   return (
     <div className="home">
@@ -166,17 +166,21 @@ const Home = ({ slides }) => {
       </div>
       <div className="testimonials-container">
         <div className="top-box"></div>
-        <div className="left-box"></div>
-        <div className="heading">
-          <h2>What Our Users Are Saying</h2>
-        </div>
         <div className="icon-box">
           <i><ImQuotesLeft /></i> 
         </div>
+        <div className="left-box"></div>
+        {/* <div className="heading">
+          <h2>What Our Users Are Saying</h2>
+        </div> */}
         <section className="slider">
-          <i><IoIosArrowDropright onClick={nextSlide}/> </i>
+          <i><IoIosArrowDropright onClick={nextSlide}/></i>
           { SliderData.map((slide, index) => {
-            return <img src={slide.image} alt="items for sale" className="image"/>;
+            return (
+              <div className={ index === current ? 'slide active' : 'slide'} key={index}>
+                {index === current && (<img src={slide.image} alt="items for sale" className="image"/>)}
+              </div>
+            )
           })}
         </section>
       </div>
