@@ -1,6 +1,50 @@
-footer h3{
-    font-size: 30px;
-    color: red;
+.footer-content {
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 100px;
+    border: 1px solid red;
 }
 
+.footer-content h2 {
+    font-size: 34px;
+}
 
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left input {
+    position: relative;
+}
+
+.footer-left button {
+    padding: 20px 35px;
+    font-size: 16px;
+    background-color: #3E7BFA;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.footer-right li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p{
+    font-size: 18px;
+}

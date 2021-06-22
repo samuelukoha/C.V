@@ -1,6 +1,7 @@
 import "./Home.css";
 import { SliderData } from './SliderData';
 import { useState } from "react";
+import Footer from '../Footer/Footer';
 
 // IMAGES
 import frame1 from "./Images/01.svg";
@@ -14,7 +15,7 @@ import { BiVideo } from 'react-icons/bi';
 import { ImQuotesLeft } from 'react-icons/im';
 import { IoIosArrowDropright } from 'react-icons/io';
 // import Navbar from '../Navbar/Navbar';
-// import Footer from '../Footer/Footer';
+
 
 const Home = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -183,6 +184,7 @@ const Home = ({ slides }) => {
             )
           })}
         </section>
+        < Footer />
       </div>
     </div>
   );

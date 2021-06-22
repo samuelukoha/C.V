@@ -233,7 +233,8 @@ nav ul li a {
     opacity: 0.6;
     margin-top: 100px;
     display: inline-flex;
-    margin-right: 50%;
+    margin-right: 40%;
+    /* padding-bottom: 100px; */
 }
 
 .testimonials-container .icon-box {
@@ -257,6 +258,8 @@ nav ul li a {
 .slider {
     position: relative;
     display: inline-flex;
+    top: -40px;
+    /* padding-bottom: 30px; */
 }
 
 .slider .image {
