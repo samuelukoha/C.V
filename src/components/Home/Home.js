@@ -79,11 +79,11 @@ const Home = ({ slides }) => {
 
           <div className="feature-boxes">
             <div className="box">
-              <div className="top">
+              <div className="left">
                 <i><FaRegComments /></i>  
                 <p>In-App Chat System</p>
               </div>
-              <div className="bottom">
+              <div className="right">
                 <div className="center-text">
                   <p>
                     Have a chat with other users to show interest in a product, 
@@ -94,30 +94,15 @@ const Home = ({ slides }) => {
             </div>
 
             <div className="box">
-              <div className="top">
+              <div className="left">
                 <i><BiVideo /></i>
                 <p>In-App Video Call</p>
               </div>
-              <div className="bottom">
+              <div className="right">
                 <div className="center-text">
                   <p>
                     Not sure of the quality or authencity product? 
                     Make a video call to see the product; also for FREE!
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="box">
-              <div className="top">
-                <i><FaWallet /></i>
-                <p>e-Wallet</p>
-              </div>
-              <div className="bottom">
-                <div className="center-text">
-                  <p>
-                    Have a chat with other users to show interest in a product, 
-                    schedule or plan delivery of items, bargain price; all for FREE!
                   </p>
                 </div>
               </div>
@@ -180,9 +165,9 @@ const Home = ({ slides }) => {
           <i><ImQuotesLeft /></i> 
         </div>
         <div className="left-box"></div>
-        {/* <div className="heading">
+        <div className="heading">
           <h2>What Our Users Are Saying</h2>
-        </div> */}
+        </div>
         <section className="slider">
           <i><IoIosArrowDropright onClick={nextSlide}/></i>
           { SliderData.map((slide, index) => {
