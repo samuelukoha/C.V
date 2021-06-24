@@ -15,6 +15,7 @@ import { FaRegComments, FaWallet } from 'react-icons/fa';
 import { BiVideo } from 'react-icons/bi';  
 import { ImQuotesLeft } from 'react-icons/im';
 import { IoIosArrowDropright } from 'react-icons/io';
+import { AiOutlineArrowRight, AiOutlineArrowDown } from 'react-icons/ai'
 // import Navbar from '../Navbar/Navbar';
 
 
@@ -65,12 +66,35 @@ const Home = ({ slides }) => {
           <p>
             Whatever it is, it can get <span>swapped!</span>
           </p>
-          <button> Start Swapping </button>
+          <div className="swap-box">
+            <p>Start Swapping </p>
+
+            <div className="icon-wrapper">
+              <i>< AiOutlineArrowRight/></i>
+            </div>
+          </div>
+
+          {/* <div className="icon-bag">
+            <i>< AiOutlineArrowDown/></i>
+          </div> */}
         </div>
       </header>
-      <div className="about-container">
-
-
+      <div className="about">
+        <div className="about-container">
+          <div className="about-heading">
+            <h3>Why SWAPPED!?</h3>
+          </div>
+          <div className="about-text">
+            <p>
+              Trading by bartering has been around for centuries now. 
+              We do this almost on a daily basis without realizing it. 
+              We exchange personal items like gadgets, clothings, food, 
+              candies and even chores, with siblings, friends and colleagues. 
+              Our platform helps users exchange or swap items for another item or money. 
+              Users can place a monetary value on the item they choose to trade or barter.
+            </p>
+          </div>
+        </div>
 
         <div className="feature-container">
           <div className="title">
@@ -80,8 +104,12 @@ const Home = ({ slides }) => {
           <div className="feature-boxes">
             <div className="box">
               <div className="left">
-                <i><FaRegComments /></i>  
-                <p>In-App Chat System</p>
+                <div className="icon-bag">
+                  <i><FaRegComments /></i>
+                </div>
+                <div className="box-title">
+                  <p>In-App Chat System</p>
+                </div>
               </div>
               <div className="right">
                 <div className="center-text">
@@ -95,8 +123,12 @@ const Home = ({ slides }) => {
 
             <div className="box">
               <div className="left">
-                <i><BiVideo /></i>
-                <p>In-App Video Call</p>
+                <div className="icon-bag">
+                  <i><BiVideo /></i>
+                </div>
+                <div className="box-title">
+                  <p>In-App Video Call</p>
+                </div>
               </div>
               <div className="right">
                 <div className="center-text">
@@ -161,9 +193,7 @@ const Home = ({ slides }) => {
       </div>
       <div className="testimonials-container">
         <div className="top-box"></div>
-        <div className="icon-box">
           <i><ImQuotesLeft /></i> 
-        </div>
         <div className="left-box"></div>
         <div className="heading">
           <h2>What Our Users Are Saying</h2>

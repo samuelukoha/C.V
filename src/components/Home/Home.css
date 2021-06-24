@@ -66,27 +66,67 @@ nav ul li a {
 }
 
 ul button {
-    /* margin-top: -5px; */
-    padding: 20px 35px;
-    font-size: 16px;
+    margin-top: -10px;
+    padding: 20px 40px;
+    font-size: 18px;
     background-color: #3E7BFA;
     cursor: pointer;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     outline: none;
 }
 
-.header-texts button {
-    padding: 20px 35px;
-    font-size: 16px;
-    background-color: #3E7BFA;
-    cursor: pointer;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    outline: none;
+.swap-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 220px;
+    height: 65px;
+    border-radius: 30px;
+    background-color: rgba(245, 245, 245, 0.2);
+    margin: 1px auto 1px;
 }
+
+.swap-box p {
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3E7BFA;
+}
+
+.swap-box .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.swap-box i {
+    font-size: 20px;
+    color: #3E7BFA;
+}
+
+/* .icon-bag {
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #3E7BFA;
+    color: #fff;
+}
+
+.icon-bag i {
+    font-size: 20px;
+} */
 
 .hamburger {
     display: none;
@@ -94,12 +134,40 @@ ul button {
 
 /* ABOUT */
 
+.about-container {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
+.about-container .about-heading {
+    display: flex;
+    align-items: center;
+}
 
+.about-container .about-heading h3 {
+    font-size: 30px;
+    color: #3E7BFA;
+}
 
+.about-container .about-text {
+    width: 25%;
+}
+
+.about-container .about-text p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.feature-container {
+    margin-bottom: 200px;
+}
 
 .feature-container .title {
+    padding-top: 100px;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .feature-container h3 {
@@ -115,51 +183,55 @@ ul button {
 }
 
 .feature-boxes .box {
-    width: 288px;
-}
-
-/* .box .top {
-    background: #3E7BFA;
-    color: #fff;
-    text-align: center;
-    border-radius: 15px;
-    padding-top: 50px;
-    z-index: 2;
-}
-
-.box .top i {
-    font-size: 30px;
-}
-
-.box .top p{
-    font-size: 20px;
-    padding-bottom: 100px;
-}
-
-.box .bottom {
-    position: relative;
     display: flex;
-    top: -15%;
-    background: #fff;
-    height: 20rem;
-    /* margin-top: 50px; */
+}
+
+.box .left {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    border-radius: 30px 30px 15px 15px;
-    box-shadow: 0px 6px 8px rgba(35, 26, 26, 0.5);
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    background-color: #3E7BFA;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.bottom .center-text {
-    margin-left: auto;
-    margin-right: auto;
-    width: 260px;
+.box .left .icon-bag i {
+    font-size: 24px;
 }
 
-.box .bottom p {
+.box .left .box-title p {
+    font-size: 20px;
+}
+
+.box .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    color: #000;
+    background-color: #fff;
+    margin-left: -30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 12px 16px rgba(73, 44, 44, 0.5);
+}
+
+.box .right .center-text {
+    height: 40%;
+    width: 80%;
+}
+
+.box .right .center-text p {
     font-size: 16px;
-    color: #454545;
     line-height: 30px;
-} */
-
+}
 
 /* HOW IT WORKS */
 
@@ -232,51 +304,14 @@ ul button {
 /* TESTIMONIAL */
 
 .testimonials-container .heading {
-    margin-top: -49%;
-    margin-left: 250px;
-    width: 300px;
+
 }
 
 .testimonials-container .heading h2 {
-    margin-top: 200px;
-    /* font-weight: lighter; */
-    font-size: 64px;
-}
-
-.testimonials-container .top-box {
-    width: 390px;
-    height: 274px;
-    background: #6698FA;
-    opacity: 0.6;
-    margin-left: 20%;
-    /* display: inline-block; */
 
 }
 
-.testimonials-container .left-box {
-    width: 249px;
-    height: 660px;
-    background: #6698FA;
-    opacity: 0.6;
-    margin-top: 100px;
-    display: inline-flex;
-    margin-right: 35%;
-    /* padding-bottom: 100px; */
-}
-
-.testimonials-container .icon-box {
-    margin-top: -100px;
-    margin-left: 130px;
-    width: 150px;
-    height: 150px;
-    background: #B1D4E5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.testimonials-container .icon-box i {
+.testimonials-container i {
     font-size: 60px;
     color: #000099;
 }
@@ -284,9 +319,8 @@ ul button {
 /* IMAGE SLIDE*/
 .slider {
     position: relative;
-    display: inline-flex;
-    top: -40px;
-    /* padding-bottom: 30px; */
+    /* display: inline-flex; */
+    top: 150px;
 }
 
 .slider .image {
@@ -298,7 +332,7 @@ ul button {
 .slider i {
     position: absolute;
     top: 90%;
-    left: 90%;
+    left: 50%;
     color: red;
     font-size: 35px;
     cursor: pointer;
@@ -327,35 +361,18 @@ ul button {
         width: 650px;
     }
 
-    .testimonials-container .top-box {
-        width: 300px;
-        height: 224px;
-        margin-left: 20%;
-    }
-    
-    .testimonials-container .left-box {
-        width: 229px;
-        height: 640px;
-        margin-right: 25%;
-    }
-    
-    .testimonials-container .icon-box {
-        margin-top: -80px;
-        width: 100px;
-        height: 100px;
-    }
-    
-    .testimonials-container .icon-box i {
-        font-size: 40px;
-    }
-
-    .slider .image {
-        height: 500px;
-    }
-
 }
 
 @media screen and (max-width: 1300px) {
+    .feature-boxes {
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .feature-boxes .box {
+        margin-bottom: 50px;
+    }
+
     .content p {
         width: 400px;
     }
@@ -364,67 +381,16 @@ ul button {
         width: 600px;
     }
 
-    .testimonials-container .top-box {
-        width: 300px;
-        height: 224px;
-        margin-left: 20%;
-    }
-    
-    .testimonials-container .left-box {
-        margin-right: 20%;
-    }
-    
-    .testimonials-container .icon-box {
-        margin-top: -80px;
-        margin-left: 100px;
-        width: 100px;
-        height: 100px;
-    }
-    
-    .testimonials-container .icon-box i {
-        font-size: 40px;
-    }
-
-    .slider .image {
-        height: 500px;
-        width: 600px;
-    }
-
 }
 
 @media screen and (max-width: 1150px) {
+
     .content p {
         font-size: 20px;
         width: 350px;
     }
 
     .content img {
-        width: 500px;
-    }
-
-    .testimonials-container .top-box {
-        width: 250px;
-        height: 200px;
-        margin-left: 20%;
-    }
-    
-    .testimonials-container .left-box {
-        margin-right: 20%;
-    }
-    
-    .testimonials-container .icon-box {
-        margin-top: -80px;
-        margin-left: 70px;
-        width: 100px;
-        height: 100px;
-    }
-    
-    .testimonials-container .icon-box i {
-        font-size: 40px;
-    }
-
-    .slider .image {
-        height: 450px;
         width: 500px;
     }
 
@@ -476,21 +442,6 @@ ul button {
         border-radius: 10px;
     }
 
-    /* .feature-boxes{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feature-container .title {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .feature-boxes .box {
-        margin-bottom: 50px;
-        width: 320px;
-    } */
-
     .item-img-right .content, .item-img-left .content {
         flex-direction: column;
         align-items: center;
@@ -503,33 +454,6 @@ ul button {
 
     .content img {
         width: 100%;
-    }
-
-    .testimonials-container .top-box {
-        width: 250px;
-        height: 200px;
-        margin-left: 20%;
-    }
-    
-    .testimonials-container .left-box {
-        width: 200px;
-        height: 600px;
-        margin-right: 15%;
-    }
-    
-    .testimonials-container .icon-box {
-        margin-top: -80px;
-        margin-left: 70px;
-        width: 80px;
-        height: 80px;
-    }
-    
-    .testimonials-container .icon-box i {
-        font-size: 30px;
-    }
-
-    .slide .image {
-        width: 400px;
     }
 }
 
@@ -544,31 +468,11 @@ ul button {
         padding-bottom: 30px;
     }
 
-    .testimonials-container .top-box {
-        width: 200px;
-        height: 100px;
-        margin-left: 20%;
-    }
-    
-    .testimonials-container .left-box {
-        width: 15%;
-        height: 400px;
-        margin-right: 15%;
-    }
-    
-    .testimonials-container .icon-box {
-        margin-left: 40px;
-        width: 50px;
-        height: 50px;
-    }
-    
-    .testimonials-container .icon-box i {
-        font-size: 20px;
+    /* .box .left {
+        width: 50%;
     }
 
-    .slider .image {
-        /* text-align: center; */
-        height: 300px;
-        width: 100%;
-    }
+    .box .right {
+        width: 50%;
+    } */
 }
