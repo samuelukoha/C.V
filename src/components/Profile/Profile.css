@@ -73,12 +73,7 @@ h2 {
   border-radius: 6px;
 }
 
-/* main container */
-.container {
-  max-width: 92%;
-  margin: 3rem auto;
-  overflow: hidden;
-}
+
 
 .container .name {
   font-size: 1.2rem;

@@ -14,6 +14,9 @@ const Navbar = () => {
         <li>
           <Link to="/profile">Profile</Link>
         </li>
+        <li>
+          <Link to="/signIn">Sign In</Link>
+        </li>
       </ul>
     </nav>
   );
