@@ -5,6 +5,7 @@ import {FaEye} from "react-icons/fa";
 import {FaLinkedinIn} from "react-icons/fa";
 import {FcGoogle} from "react-icons/fc";
 import {FaFacebookF} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 function SignUp() {
@@ -46,12 +47,12 @@ function SignUp() {
     }
 
     return ( 
-        <div className = "container center-form" >
+        <div className = "container align center-form" >
        
-         <div className = "signUp col-lg-5" >
+         <div className = "col-lg-5" >
       
         <form onSubmit = { handleSubmit }
-        controlid = "email" >
+        controlid = "email" className="signUp " >
    <p className="fw-bold">Welcome! Create your account </p>
    <div className="my-4">
    <label 
@@ -124,17 +125,20 @@ function SignUp() {
         />
  
   </div>
-  <p className="text-center my-2">Already have an account?  <a href='./SignIn'>Sign in</a></p>
+  <p className="text-center">Already have an account?   <Link to="/signIn" className="mx-1 text-decoration-none">
+              Sign In
+       </Link></p>
          </form> 
-         </div > 
-
-         <p className="fw-bold my-1">OR</p>
-         <p>Sign in with </p>
+         <p className="fw-bold text-center my-1">OR</p>
+         <p className="my-2 text-center">Sign in with </p>
 <div className="logos">
      <FaLinkedinIn className="social-icon"/>
      <FcGoogle className="social-icon" />
      <FaFacebookF className="social-icon"/>
 </div>
+         </div > 
+
+  
          </div>
 
     );

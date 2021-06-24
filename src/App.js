@@ -1,34 +1,33 @@
-// import Home from './components/Home/Home';
-// import About from './components/About/About';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import SignUp from './components/SignUp/SignUp';
-import SignIn from './components/SignIn/SignIn';
-import Navbar from './components/Navbar/Navbar';
-import ForgotPassword from './components/Forgotpassword/ForgotPassword';
-import SetupPassword from './components/SetupPassword/SetupPassword';
-import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-import {faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faEyeSlash)
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Profile from "./components/Profile/Profile";
+import SignIn from "./components/SignIn/SignIn";
+import SignUp from "./components/SignUp/SignUp";
+import ForgotPassword from "./components/Forgotpassword/ForgotPassword";
+import SetupPassword from "./components/SetupPassword/SetupPassword";
+
+
 
 function App() {
   return (
     <>
     <Router>
     <div className="App">
-      
-    <Navbar/>
-
-       <Switch>
-        <Route  path="/signIn" exact component={SignIn} />
-        <Route path="/signUp" component={SignUp} />
-        <Route path="/forgotPassword" component={ForgotPassword} />
-        <Route path="/setupPassword" component={SetupPassword} />
-      </Switch>
- 
-             
-      
+      <Router>
+        <>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" exact component={About} />
+            <Route path="/profile" exact component={Profile} />
+            <Route path="/signIn" exact component={SignIn} />
+            <Route path="/signUp" exact component={SignUp} />
+            <Route path="/forgotPassword" exact component={ForgotPassword} />
+            <Route path="/setupPassword" exact component={SetupPassword} />
+          </Switch>
+        </>
+      </Router>
     </div>
     </Router>
     </>

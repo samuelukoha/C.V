@@ -1,21 +1,23 @@
 
   .center-form{
     display: flex;
-    flex-direction: column;
+   height: 100vh;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+  
   }
 
 .signUp{
   font-size: 15px;
-    height: 80vh;
+  
     border-radius: 8px;
     padding: 30px 35px;
     box-shadow: 7.90519905090332px 15.81039810180664px 56.91743087768555px 0px rgb(44 43 125 / 10%);
 
 }
-
+.align{
+  flex-direction: column;
+}
 .buttons{
     display: flex;
     justify-content: space-around;
