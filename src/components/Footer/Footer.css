@@ -2,7 +2,7 @@
     margin-top: 200px;
     margin-left: 50px;
     margin-right: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .footer-content h2 {
@@ -15,10 +15,21 @@
 }
 
 .footer-left input {
-    position: relative;
+    /* position: absolute; */
+    padding: 15px;
+    border: none;
+    background: #fff;
+    border-bottom: 1px solid #222;
+    /* padding: 20px; */
+    margin-top: 70px;
+    width: 470px;
+    outline: none;
+    transition: 0.3s;
+    letter-spacing: 1px;
 }
 
 .footer-left button {
+    position: absolute;
     padding: 20px 35px;
     font-size: 16px;
     background-color: #3E7BFA;
@@ -26,6 +37,12 @@
     color: #fff;
     border: none;
     border-radius: 8px;
+    left: 380px;
+    margin-top: 50px;
+}
+
+::placeholder {
+    font-size: 20px;
 }
 
 .footer-right li {
@@ -47,4 +64,26 @@
 
 .copyright p{
     font-size: 18px;
+}
+
+@media screen and (max-width: 789px) {
+    .footer-content h2 {
+        font-size: 24px;
+    }
+
+    .footer-body {
+        flex-direction: column;
+    }
+
+    .footer-body .footer-left, .footer-body .footer-right{
+        margin-bottom: 50px;
+    }
+
+    ::placeholder {
+        font-size: 15px;
+    }
+
+    copyright p {
+        font-size: 15px;
+    }
 }

@@ -2,6 +2,7 @@ import "./Home.css";
 import { SliderData } from './SliderData';
 import { useState } from "react";
 import Footer from '../Footer/Footer';
+import {Link} from 'react-router-dom';
 
 // IMAGES
 import frame1 from "./Images/01.svg";
@@ -18,6 +19,7 @@ import { IoIosArrowDropright } from 'react-icons/io';
 
 
 const Home = ({ slides }) => {
+  const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -35,7 +37,7 @@ const Home = ({ slides }) => {
       <header>
         <nav>
           <h2>SWAPPED!</h2>
-
+        
           <ul>
             <li>
               <a href="/">Home</a>
@@ -49,14 +51,21 @@ const Home = ({ slides }) => {
             <li>
               <a href="/">How it works</a>
             </li>
+
+            <button> Sign In </button>
           </ul>
         </nav>
+        <div className="hamburger" onClick={() => setOpen(!open)}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+        </div>
         <div className="header-texts">
           <h1>Give items away, Get Item you want</h1>
           <p>
             Whatever it is, it can get <span>swapped!</span>
           </p>
-          <button>Start Swapping</button>
+          <button> Start Swapping </button>
         </div>
       </header>
       <div className="about-container">
@@ -121,48 +130,48 @@ const Home = ({ slides }) => {
          <h2>how it works</h2>
         </div>
         <div className="works-bag">
-        <div className="item-img-right">
-          <h2>01</h2>
-          <div className="content">
-            <p> Sign up on the website to begin this journey</p>
+          <div className="item-img-right">
+            <h2>01</h2>
+            <div className="content">
+              <p> Sign up on the website to begin this journey</p>
 
-            <img src={frame1} alt="xyz" />
+              <img src={frame1} alt="xyz" />
+            </div>
           </div>
-        </div>
-        <div className="item-img-left">
-          <h2>02</h2>
-          <div className="content">
-            <img src={frame2} alt="xyz" />
-            <p>
-              Upload photos of the item you want to swap, giving description
-              about the item, the item you need in return and cash equivalent of
-              the item.
-            </p>
+          <div className="item-img-left">
+            <h2>02</h2>
+            <div className="content">
+              <img src={frame2} alt="xyz" />
+              <p>
+                Upload photos of the item you want to swap, giving description
+                about the item, the item you need in return and cash equivalent of
+                the item.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="item-img-right">
-          <h2>03</h2>
-          <div className="content">
-            <p>
-              Search for items you like or need, show interest for a swap and
-              trade by contacting the owner of the item by reaching an
-              agreement.
-            </p>
+          <div className="item-img-right">
+            <h2>03</h2>
+            <div className="content">
+              <p>
+                Search for items you like or need, show interest for a swap and
+                trade by contacting the owner of the item by reaching an
+                agreement.
+              </p>
 
-            <img src={frame3} alt="xyz" />
+              <img src={frame3} alt="xyz" />
+            </div>
           </div>
-        </div>
-        <div className="item-img-left">
-          <h2>04</h2>
-          <div className="content">
-            <img src={frame4} alt="xyz" />
+          <div className="item-img-left">
+            <h2>04</h2>
+            <div className="content">
+              <img src={frame4} alt="xyz" />
 
-            <p>
-              Based on your agreement, you both meet at a preferred location to
-              exchange items or get it delivered to you.
-            </p>
+              <p>
+                Based on your agreement, you both meet at a preferred location to
+                exchange items or get it delivered to you.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <div className="testimonials-container">
