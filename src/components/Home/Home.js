@@ -2,7 +2,7 @@ import "./Home.css";
 import { SliderData } from './SliderData';
 import { useState } from "react";
 import Footer from '../Footer/Footer';
-// import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // IMAGES
 import frame1 from "./Images/01.svg";
@@ -15,7 +15,7 @@ import { FaRegComments  } from 'react-icons/fa';
 import { BiVideo } from 'react-icons/bi';  
 import { ImQuotesLeft } from 'react-icons/im';
 import { IoIosArrowDropright } from 'react-icons/io';
-import { AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineArrowRight } from 'react-icons/ai';
 // import Navbar from '../Navbar/Navbar';
 
 
@@ -53,7 +53,7 @@ const Home = ({ slides }) => {
               <a href="/">How it works</a>
             </li>
 
-            <button> Sign In </button>
+            <Link to="/signUp"><button>Sign In</button></Link> 
           </ul>
         </nav>
         <div className="hamburger" onClick={() => setOpen(!open)}>
@@ -67,16 +67,12 @@ const Home = ({ slides }) => {
             Whatever it is, it can get <span>swapped!</span>
           </p>
           <div className="swap-box">
-            <p>Start Swapping </p>
+            <Link to="/profile"><p>Start Swapping</p></Link>
 
             <div className="icon-wrapper">
               <i>< AiOutlineArrowRight/></i>
             </div>
           </div>
-
-          {/* <div className="icon-bag">
-            <i>< AiOutlineArrowDown/></i>
-          </div> */}
         </div>
       </header>
       <div className="about">
