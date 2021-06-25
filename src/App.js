@@ -1,4 +1,3 @@
-
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -7,8 +6,7 @@ import SignIn from "./components/SignIn/SignIn";
 import SignUp from "./components/SignUp/SignUp";
 import ForgotPassword from "./components/Forgotpassword/ForgotPassword";
 import SetupPassword from "./components/SetupPassword/SetupPassword";
-
-
+import {SliderData} from './components/Home/SliderData';
 
 function App() {
   return (
@@ -18,7 +16,8 @@ function App() {
       <Router>
         <>
           <Switch>
-            <Route path="/" exact component={Home} />
+            <Home slides={SliderData}/>
+            <Route path="/" exact component={Home}/>
             <Route path="/about" exact component={About} />
             <Route path="/profile" exact component={Profile} />
             <Route path="/signIn" exact component={SignIn} />

@@ -1,4 +1,89 @@
-footer h3{
-    font-size: 30px;
-    color: red;
+.footer-content {
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 100px;
+    /* border: 1px solid red; */
+}
+
+.footer-content h2 {
+    font-size: 34px;
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left input {
+    /* position: absolute; */
+    padding: 15px;
+    border: none;
+    background: #fff;
+    border-bottom: 1px solid #222;
+    /* padding: 20px; */
+    margin-top: 70px;
+    width: 470px;
+    outline: none;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.footer-left button {
+    position: absolute;
+    padding: 20px 35px;
+    font-size: 16px;
+    background-color: #3E7BFA;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    left: 380px;
+    margin-top: 50px;
+}
+
+::placeholder {
+    font-size: 20px;
+}
+
+.footer-right li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 789px) {
+    .footer-content h2 {
+        font-size: 24px;
+    }
+
+    .footer-body {
+        flex-direction: column;
+    }
+
+    .footer-body .footer-left, .footer-body .footer-right{
+        margin-bottom: 50px;
+    }
+
+    ::placeholder {
+        font-size: 15px;
+    }
+
+    copyright p {
+        font-size: 15px;
+    }
 }
