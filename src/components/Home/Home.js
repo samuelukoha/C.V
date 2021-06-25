@@ -2,7 +2,7 @@ import "./Home.css";
 import { SliderData } from './SliderData';
 import { useState } from "react";
 import Footer from '../Footer/Footer';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 // IMAGES
 import frame1 from "./Images/01.svg";
@@ -11,11 +11,11 @@ import frame3 from "./Images/03.svg";
 import frame4 from "./Images/04.svg";
 
 // ICONS
-import { FaRegComments, FaWallet } from 'react-icons/fa';
+import { FaRegComments  } from 'react-icons/fa';
 import { BiVideo } from 'react-icons/bi';  
 import { ImQuotesLeft } from 'react-icons/im';
 import { IoIosArrowDropright } from 'react-icons/io';
-import { AiOutlineArrowRight, AiOutlineArrowDown } from 'react-icons/ai'
+import { AiOutlineArrowRight } from 'react-icons/ai'
 // import Navbar from '../Navbar/Navbar';
 
 
